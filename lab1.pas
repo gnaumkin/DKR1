@@ -1,4 +1,4 @@
-﻿program lab1;
+program lab1;
 var x, zn :real;
 const e = 2.71828;
 const step = 0.1;
@@ -9,11 +9,11 @@ while x<=0 do begin
   if x<-6 
   then zn:=(x/95)*(1/x)
   else
-    if (-6<=x) and (x<-2)
-    then zn:=exp(x*ln(e))*exp(x*ln(e))-cos(2*x)
-  else
+    zn:=exp(x*ln(e))*exp(x*ln(e))-cos(2*x);
+  begin
     if -2<=x 
     then zn:=cos(x);  
   writeln ('Значение функции равно: ', zn);
   end;
+end;
 end.
